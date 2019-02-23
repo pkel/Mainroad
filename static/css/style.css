@@ -1011,6 +1011,27 @@ textarea {
 }
 
 /* Widgets */
+.widgetbar {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.widgetbar a {
+	font-weight: 400;
+	color: #000;
+	text-decoration: none;
+}
+
+.widgetbar a:hover {
+	color: #e64946;
+	text-decoration: none;
+}
+
+.widgetbar .widget {
+	flex-basis: calc(33% - 20px);
+}
+
 .widget {
 	margin-bottom: 25px;
 	overflow: hidden;
@@ -1212,6 +1233,10 @@ textarea {
 	input[type=tel],
 	input[type=url] {
 		width: 88%;
+	}
+
+	.widgetbar {
+		display: block;
 	}
 
 	.meta__item {
