@@ -1015,6 +1015,7 @@ textarea {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+	padding-top: 1rem;
 }
 
 .widgetbar a {
