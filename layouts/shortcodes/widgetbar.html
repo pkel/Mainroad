@@ -1,0 +1,7 @@
+{{- $root := . }}
+<div class="widgetbar">
+	{{- range .Params }}
+		{{- $p := printf "widgets/%s.html" . }}
+		{{- partial $p $root }}
+	{{- end }}
+</div>
