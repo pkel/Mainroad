@@ -1,0 +1,11 @@
+{{ range .Params.gallery }}
+<figure>
+  <img src="{{ .filename }}" />
+  <figcaption>
+    {{- if (and .caption .source) -}}
+    {{- trim .caption "\n\t "}}&ensp;(Quelle: {{ .source }})
+    {{- else if .source }}Quelle: {{ .source }}
+		{{- else }}{{ .caption }}{{ end -}}
+  </figcaption>
+</figure>
+{{ end }}
